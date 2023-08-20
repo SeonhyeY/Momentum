@@ -14,12 +14,13 @@
     <script src="src/quotes.js" defer></script>
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Background -->
     <div class="background">
       <!-- Register & Show user name -->
-      <form class="login-form hidden">
+      <form class="login-form">
         <input
           required
           maxlength="15"
@@ -28,17 +29,17 @@
         />
         <button>Log In</button>
       </form>
-      <h1 class="greeting hidden"></h1>
+      <div class="greeting logout-component"></div>
 
       <!-- Clock & Weather -->
-      <h2 class="clock">00:00</h2>
-      <div class="geolocation">
+      <div class="clock logout-component">00:00</div>
+      <div class="geolocation logout-component">
         <span class="geolocation__weather"></span>
         <span class="geolocation__location"></span>
       </div>
 
       <!-- To Do -->
-      <div class="todo">
+      <div class="todo logout-component">
         <form class="todo__form">
           <input
             class="todo__input"
@@ -51,7 +52,7 @@
       </div>
 
       <!-- Quote -->
-      <div class="quote">
+      <div class="quote logout-component">
         <span class="quote__text"></span>
         <span class="quote__author"></span>
       </div>
