@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum</title>
     <!-- JavaScript -->
+    <script src="src/background.js" defer></script>
     <script src="src/greetings.js" defer></script>
     <script src="src/clock.js" defer></script>
     <script src="src/geolocation.js" defer></script>
@@ -13,42 +14,45 @@
     <script src="src/quotes.js" defer></script>
   </head>
   <body>
-    <!-- Register & Show user name -->
-    <form class="login-form hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <button>Log In</button>
-    </form>
-    <h1 class="greeting hidden"></h1>
-
-    <!-- Clock & Weather -->
-    <h2 class="clock">00:00</h2>
-    <div class="geolocation">
-      <span class="geolocation__weather"></span>
-      <span class="geolocation__location"></span>
-    </div>
-
-    <!-- To Do -->
-    <div class="todo">
-      <form class="todo__form">
+    <!-- Background -->
+    <div class="background">
+      <!-- Register & Show user name -->
+      <form class="login-form hidden">
         <input
-          class="todo__input"
-          type="text"
-          placeholder="Write to do and press enter"
           required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
         />
+        <button>Log In</button>
       </form>
-      <ul class="todo__list"></ul>
-    </div>
+      <h1 class="greeting hidden"></h1>
 
-    <!-- Quote -->
-    <div class="quote">
-      <span class="quote__text"></span>
-      <span class="quote__author"></span>
+      <!-- Clock & Weather -->
+      <h2 class="clock">00:00</h2>
+      <div class="geolocation">
+        <span class="geolocation__weather"></span>
+        <span class="geolocation__location"></span>
+      </div>
+
+      <!-- To Do -->
+      <div class="todo">
+        <form class="todo__form">
+          <input
+            class="todo__input"
+            type="text"
+            placeholder="Write to do and press enter"
+            required
+          />
+        </form>
+        <ul class="todo__list"></ul>
+      </div>
+
+      <!-- Quote -->
+      <div class="quote">
+        <span class="quote__text"></span>
+        <span class="quote__author"></span>
+      </div>
     </div>
   </body>
 </html>
