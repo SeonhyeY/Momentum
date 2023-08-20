@@ -7,6 +7,8 @@
     <!-- JavaScript -->
     <script src="src/greetings.js" defer></script>
     <script src="src/clock.js" defer></script>
+    <script src="src/geolocation.js" defer></script>
+    <script src="src/API_KEY.js"></script>
   </head>
   <body>
     <!-- Register & Show user name -->
@@ -21,7 +23,11 @@
     </form>
     <h1 class="greeting hidden"></h1>
 
-    <!-- Clock -->
+    <!-- Clock & Weather -->
     <h2 class="clock">00:00</h2>
+    <div class="geolocation">
+      <span class="geolocation__weather"></span>
+      <span class="geolocation__location"></span>
+    </div>
   </body>
 </html>
