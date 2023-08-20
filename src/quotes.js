@@ -51,5 +51,5 @@ const quote = document.querySelector('.quote__text');
 const author = document.querySelector('.quote__author');
 const quoteIndex = Math.floor(Math.random() * quotes.length);
 
-quote.innerHTML = quotes[quoteIndex].quote;
-author.innerHTML = quotes[quoteIndex].author;
+quote.innerHTML = `"${quotes[quoteIndex].quote}"`;
+author.innerHTML = `- by ${quotes[quoteIndex].author}-`;

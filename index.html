@@ -20,41 +20,47 @@
     <!-- Background -->
     <div class="background">
       <!-- Register & Show user name -->
-      <form class="login-form">
+      <form class="login__form">
         <input
+          class="login__input"
           required
           maxlength="15"
           type="text"
           placeholder="What is your name?"
         />
-        <button>Log In</button>
       </form>
-      <div class="greeting logout-component"></div>
+      <div class="greeting login--component"></div>
 
-      <!-- Clock & Weather -->
-      <div class="clock logout-component">00:00</div>
-      <div class="geolocation logout-component">
-        <span class="geolocation__weather"></span>
-        <span class="geolocation__location"></span>
-      </div>
+      <div class="main">
+        <!-- Clock & Weather -->
+        <div class="info login--component">
+          <div class="date login--component"></div>
+          <div class="clock login--component">00:00</div>
+          <div class="geolocation login--component">
+            <span class="geolocation__weather"></span>
+            <span class="geolocation__location"></span>
+          </div>
+        </div>
 
-      <!-- To Do -->
-      <div class="todo logout-component">
-        <form class="todo__form">
-          <input
-            class="todo__input"
-            type="text"
-            placeholder="Write to do and press enter"
-            required
-          />
-        </form>
-        <ul class="todo__list"></ul>
-      </div>
+        <!-- To Do -->
+        <div class="todo login--component">
+          <form class="todo__form">
+            <input
+              class="todo__input"
+              type="text"
+              placeholder="Write to do and press enter"
+              required
+            />
+          </form>
+          <ul class="todo__list"></ul>
+        </div>
 
-      <!-- Quote -->
-      <div class="quote logout-component">
-        <span class="quote__text"></span>
-        <span class="quote__author"></span>
+        <!-- Quote -->
+        <div class="quote login--component">
+          <span class="quote__text"></span>
+          <br />
+          <span class="quote__author"></span>
+        </div>
       </div>
     </div>
   </body>
